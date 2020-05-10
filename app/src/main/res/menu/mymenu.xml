@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+
+    <item
+        android:id="@+id/it1"
+        android:icon="@drawable/ic_menu_manage"
+
+        android:title="App Diagnostics"/>
+    <item
+        android:id="@+id/it2"
+
+android:icon="@drawable/ic_search_black_24dp"
+        android:title="Apk Scanner"/>
+    <item
+    android:id="@+id/it3"
+        android:icon="@drawable/ic_url_24dp"
+    android:title="URL Scanner"/>
+    <item
+        android:id="@+id/it4"
+        android:icon="@drawable/ic_vulnerability_24dp"
+        android:title="Vulnerability Scanner"/><item
+    android:id="@+id/it5"
+    android:icon="@drawable/ic_feeds_24dp"
+    android:title="Latest Feeds"/><item
+    android:id="@+id/it6"
+    android:icon="@drawable/ic_security_black_24dp"
+    android:title="Security Threats"/>
+    <item
+        android:id="@+id/it7"
+        android:icon="@drawable/ic_guideline_24dp"
+        android:title="Security Guidelines"/><item
+    android:id="@+id/it8"
+    android:icon="@drawable/ic_phonediagnostic_24dp"
+    android:title="Phone Diagnostics"/>
+</menu>

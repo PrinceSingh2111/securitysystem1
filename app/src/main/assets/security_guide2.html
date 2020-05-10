@@ -1,0 +1,224 @@
+
+</!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<div class="field field-name-field-paragraph-column-left"><h2>1. TLS 1.0 and TLS 1.1 end of support</h2>
+
+<h3>1.1 Description</h3>
+
+<p>Transport Layer Security (TLS) is the protocol used on the internet today to encrypt end-to-end connections. </p>
+
+<h3>1.2 Disallowing Transport Layer Security (TLS) 1.0 and Transport Layer Security (TLS) 1.1 on SWIFT services and swift.com</h3>
+
+<p>As of January 1 2019, SWIFT will no longer allow TLS 1.0 and TLS 1.1 on all SWIFT services and swift.com. Security of customers’ data is important and SWIFT is committed to provide the safest and most reliable method of delivering services. </p>
+
+<h3>1.3 Why are we deprecating TLS 1.0 and 1.1?</h3>
+
+<p>TLS 1.0 and TLS 1.1 are considered insecure today and have been replaced with TLS 1.2. Standards bodies such as the Payment Cards Industry Security Standards Council (PCI SSC) and the National Institute of Standards and Technology (NIST) recommend disabling TLS 1.0 and TLS 1.1. TLS 1.2 is supported by all major browsers and SWIFT products. </p>
+
+<p>Note that SWIFT’s Customer Security Programme (CSP) control 2.2 mandates that all software (including operating systems) and hardware (including network devices) are within the actively supported product lifecycle window of the vendor. </p>
+</div><div class="field field-name-field-paragraph-column-right"><h3> </h3>
+
+<h3>1.4 How to prepare for TLS 1.2?</h3>
+
+<h4>1.4.1 Browser based services: (e.g.: SWIFT WebAccess, SWIFT Certificate Center, Alliance Lite2, Sanctions Screening, ...)</h4>
+
+<p>If you are using an outdated web browser or your browser is not configured to use TLS 1.2, SWIFT recommends to upgrade your browser to Internet Explorer 11 or change the settings of your web browser to enable TLS 1.2. </p>
+
+<p>For instructions about how to enable TLS 1.2 on Internet Explorer see <a href="https://www2.swift.com/go/tip/5019758">TIP 5019758</a>.</p>
+
+<h4>1.4.2 Alliance Lite2 Autoclient:</h4>
+
+<p>To prevent any service interruption after December 31st 2018, customers not using AutoClient 1.2.2 must upgrade the AutoClient to release 1.3 before </p></div></div>
+
+</div>
+<div class="wrapper-back-to-top"><div class="container"><div class="field-name-field-content-block-back-to-top">0</div></div></div><div class="field field-name-field-content-block-background">White</div></div>
+
+</div><div class="field-collection-view clearfix view-mode-full white"><div  class="ds-1col entity entity-field-collection-item field-collection-item-field-content-block view-mode-full  clearfix">
+
+
+
+<div class="paragraphs-items paragraphs-items-field-content-block-content paragraphs-items-field-content-block-content-full paragraphs-items-full">
+  <div  class="ds-1col entity entity-paragraphs-item paragraphs-item-two-column view-mode-full  clearfix">
+
+
+<div class="field field-name-field-paragraph-column-left"><h2>2. Secure the access to applications</h2>
+
+<h3>2.1 User-id and password</h3>
+
+<p>The main method to protect an account is to use a combination of user-id and password. The strength of this protection will greatly depend on the complexity of the password.</p>
+
+<p>SWIFT recommends that at least these criteria are met:</p>
+
+<ul><li>At least 8 characters long</li>
+	<li>Combines digits, special characters, uppercase and lowercase letters</li>
+	<li>Only used for accessing swift.com</li>
+	<li>Not trivial (e.g. dictionary words)</li>
+</ul><p>Changing your password regularly is another good practice – your administrator may mandate this.</p>
+
+<p>Obviously the complexity of your password is nothing compared to the requirement to keep it secret. The best way to do that is to memorize it and not keeping any written copy.</p>
+</div><div class="field field-name-field-paragraph-column-right"><h3> </h3>
+
+<h3>2.2 2-step verification</h3>
+
+<p>2-step verification is a security measure that helps protect your account from unauthorised access if someone manages to obtain your password. An additional layer of security requires a verification code to be entered along with your username and password.</p>
+
+<p>This code can be delivered to you by SMS, voice message, or e-mail. SMS and voice message are the preferred means of delivering the verification code. This is because your e-mail address is already linked to your swift.com account and an external means of providing the authentication code is favoured.</p>
+
+<p>Note that the secure channel application on swift.com uses a one-time password to secure each transaction that involves sensitive data. Security officers accessing the application must use their personal secure code card to generate the required one-time passwords.</p>
+</div></div>
+
+</div>
+<div class="wrapper-back-to-top"><div class="container"><div class="field-name-field-content-block-back-to-top">0</div></div></div><div class="field field-name-field-content-block-background">White</div></div>
+
+</div><div class="field-collection-view clearfix view-mode-full white"><div  class="ds-1col entity entity-field-collection-item field-collection-item-field-content-block view-mode-full  clearfix">
+
+
+
+<div class="paragraphs-items paragraphs-items-field-content-block-content paragraphs-items-field-content-block-content-full paragraphs-items-full">
+  <div  class="ds-1col entity entity-paragraphs-item paragraphs-item-two-column view-mode-full  clearfix">
+
+
+<div class="field field-name-field-paragraph-column-left"><h2>3. Visit only trusted websites</h2>
+
+<h3>3.1 Check the URL</h3>
+
+<ul><li>Verify the URL of the web page before entering any personal data such as your e-mail address and password.</li>
+	<li>SWIFT always uses a secure connection to ask for your e-mail address and password. The URLs used by SWIFT start with "www2.swift.com" or "login.swift.com".</li>
+</ul><h3>3.2 Verify the certificate on HTTPS websites</h3>
+
+<p>In most browsers this is done by clicking on the lock symbol either at the top or the bottom of the browser window.</p>
+</div><div class="field field-name-field-paragraph-column-right"><h3> </h3>
+
+<h3>3.3 Use a login-seal</h3>
+
+<p>You have the ability to define a seal that will be displayed to you every time you access the swift.com login page. When you see this login-seal you are sure to be at the right place to enter your credentials. SWIFT recommends using it to improve security.</p>
+
+<p>To learn how to set up a login-seal, please see this <a href="https://www.swift.com/ordering-support/how-to-set-up-a-login-seal">page</a>.</p></div></div>
+
+</div>
+<div class="wrapper-back-to-top"><div class="container"><div class="field-name-field-content-block-back-to-top">0</div></div></div><div class="field field-name-field-content-block-background">White</div></div>
+
+</div><div class="field-collection-view clearfix view-mode-full white"><div  class="ds-1col entity entity-field-collection-item field-collection-item-field-content-block view-mode-full  clearfix">
+
+
+
+<div class="paragraphs-items paragraphs-items-field-content-block-content paragraphs-items-field-content-block-content-full paragraphs-items-full">
+  <div  class="ds-1col entity entity-paragraphs-item paragraphs-item-one-column view-mode-full  clearfix">
+
+
+<h2>4. Use a recent browser</h2>
+
+<p>Using a recent browser is the best way to avoid common attacks and keep your account safe. SWIFT strongly encourages you to update it regularly. A recent browser means that you will have access to the latest security standards provided by the vendor. You should also update all the plugins (e.g. Java, Flash) that are integrated within the browser.</p>
+</div>
+
+</div>
+<div class="wrapper-back-to-top"><div class="container"><div class="field-name-field-content-block-back-to-top">0</div></div></div><div class="field field-name-field-content-block-background">White</div></div>
+
+</div><div class="field-collection-view clearfix view-mode-full white"><div  class="ds-1col entity entity-field-collection-item field-collection-item-field-content-block view-mode-full  clearfix">
+
+
+
+<div class="paragraphs-items paragraphs-items-field-content-block-content paragraphs-items-field-content-block-content-full paragraphs-items-full">
+  <div  class="ds-1col entity entity-paragraphs-item paragraphs-item-two-column view-mode-full  clearfix">
+
+
+<div class="field field-name-field-paragraph-column-left"><h2>5. Phishing &amp; social engineering</h2>
+
+<h3>5.1 What is phishing?</h3>
+
+<p>Phishing is an attempt to get hold of your data with malicious intent, in order to abuse your personal details, such as user-id and password. It is the most common way to do social engineering. In practice it often involves asking you to click on a link to a malicious website that looks like the site of a trusted institution. Phishing can also be performed via phone or chat by people pretending to be a trusted party, such as the helpdesk.</p>
+
+<h3>5.2 Secure mailing practices</h3>
+
+<p>Mail sender and embedded links can easily be spoofed. Therefore emails sent from SWIFT are generally digitally signed and as a receiver you must verify the signature.</p>
+
+<p>SWIFT will never ask you to change your credentials by email, unless you requested a change yourself.</p>
+
+<h3>5.3 How to prevent a phishing attempt?</h3>
+
+<p>Verify the signature (see tip <a href="https://www2.swift.com/go/tip/5022540">5022540</a> for a step-by-step guide).</p>
+
+<p>In case our emails contain embedded links, you must check that:</p>
+
+<ul><li>The URL (mouse-over the link to see the real URL) starts with one of the below:
+		<ul><li><a href="https://login.swift.com/">https://login.swift.com/</a></li>
+			<li><a href="https://www2.swift.com/">https://www2.swift.com/</a></li>
+			<li><a href="https://www.swift.com/">https://www.swift.com/</a></li>
+			<li><a href="https://swift.emsecure.net/">https://swift.emsecure.net/</a></li>
+		</ul></li>
+	<li>After you click and are redirected, one of the above domains is still shown in your browser’s address bar,</li>
+	<li>It uses secure HTTPS protocol, and </li>
+	<li>A valid certificate is assigned to SWIFT’s website.</li>
+</ul></div><div class="field field-name-field-paragraph-column-right"><h3> </h3>
+
+<h3>5.4 Email signature &amp; certificate</h3>
+
+<p>We use different systems for email send-out, with different signatures &amp; certificates. </p>
+
+<p>From: </p>
+
+<ul><li>operations@mailing.swift.com</li>
+	<li>newsletter@mailing.swift.com</li>
+	<li>events@mailing.swift.com</li>
+	<li>info@mailing.swift.com</li>
+	<li>security.notification@swift.com</li>
+	<li>cs.deployment@swift.com</li>
+	<li>interface.changes@swift.com</li>
+	<li>SWIFTFunds@swift.com</li>
+	<li>shareholding@swift.com</li>
+	<li>swiftref.ssi@swift.com</li>
+</ul><p>For example (each address has its own signature): </p>
+</div></div>
+
+</div>
+<div class="wrapper-back-to-top"><div class="container"><div class="field-name-field-content-block-back-to-top">0</div></div></div><div class="field field-name-field-content-block-background">White</div></div>
+
+</div><div class="field-collection-view clearfix view-mode-full white"><div  class="ds-1col entity entity-field-collection-item field-collection-item-field-content-block view-mode-full  clearfix">
+
+
+
+<div class="paragraphs-items paragraphs-items-field-content-block-content paragraphs-items-field-content-block-content-full paragraphs-items-full">
+  <div  class="ds-1col entity entity-paragraphs-item paragraphs-item-one-column view-mode-full  clearfix">
+
+
+<p><img alt="Examples Operations" style="float: left;" class="media-element file-fullwidth" data-delta="8" src="https://www.swift.com/sites/default/files/styles/full_width/public/assets/operations.png?itok=I57pW8n1" width="1140" height="67" /></p>
+
+<p> </p>
+
+<p><img alt="Examples Deployment" class="media-element file-fullwidth" data-delta="10" src="https://www.swift.com/sites/default/files/styles/full_width/public/assets/cs.deployment.png?itok=BGLEPTI9" width="1140" height="74" /></p>
+</div>
+
+</div>
+<div class="wrapper-back-to-top"><div class="container"><div class="field-name-field-content-block-back-to-top">0</div></div></div><div class="field field-name-field-content-block-background">White</div></div>
+
+</div><div class="field-collection-view clearfix view-mode-full field-collection-view-final white"><div  class="ds-1col entity entity-field-collection-item field-collection-item-field-content-block view-mode-full  clearfix">
+
+
+
+<div class="paragraphs-items paragraphs-items-field-content-block-content paragraphs-items-field-content-block-content-full paragraphs-items-full">
+  <div  class="ds-1col entity entity-paragraphs-item paragraphs-item-two-column view-mode-full  clearfix">
+
+
+<div class="field field-name-field-paragraph-column-left"><h4>Details:</h4>
+
+<p>These e-mails are signed with certificates issued by Comodo. Your email systems must trust Comodo as a Certification Authority (CA) in order to trust the e-mails signed by Comodo. If not, you may receive a warning or an error.</p>
+</div><div class="field field-name-field-paragraph-column-right"><h4>What if you get an error?</h4>
+
+<p>Trust the Comodo root certificate in your email client, and ask your IT/Helpdesk to set trust these at company level. </p>
+
+<p>Your email client must also have access to the internet in order to download the revocation list (CRL) published by Comodo and/or to allow OCSP validation (Online revocation validation).</p>
+
+<p>If you still face issues after these steps, please contact Customer Support.</p>
+</div></div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10sp"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/cv"
+        app:cardCornerRadius="20sp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/skyblue"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        app:contentPadding="2dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/iv"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv"
+
+                android:layout_below="@+id/iv"
+                android:linksClickable="true"
+                android:layout_marginTop="10dp"
+                android:text="http://cacms.in"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
